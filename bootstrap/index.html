@@ -1,0 +1,2013 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <style>
+    .menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-list li {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menu-list li i {
+  font-size: 20px;
+  margin-right: 12px;
+  color: #333;
+}
+.menu-list li:hover {
+  background-color: #f8f8f8;
+}
+
+
+    .box1:hover {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    }
+
+    .box1:hover .box11 {
+      display: flex !important;
+    }
+
+    .pageimage1 {
+      background-image: url('banner-ad-1.jpg');
+    }
+
+    .underline1 {
+      text-decoration: none;
+    }
+
+    .underline1::after {
+      content: "";
+      width: 0;
+      height: 2px;
+      display: block;
+      background-color: antiquewhite;
+    }
+
+    .underline1:hover::after {
+      width: 70px;
+      transition: .2s;
+    }
+
+    .pageimage2 {
+      background-image: url('banner-ad-2.jpg');
+    }
+
+    .pageimage3 {
+      background-image: url('banner-ad-3.jpg');
+    }
+
+    .page7image {
+      background-image: url('banner-newsletter.jpg');
+    }
+    body{
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="logo.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <button class="navbar-toggler-icon" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></button>
+
+
+            <div class="div mx-3 d-flex justify-content-evenly border rounded-5 bg-white p-1 W-100 "
+                style="width: 100%;">
+                <div class="form">
+                    <select class="form-select border-0 ms-0 ps-0" style=" width:90% ;" id="floatingSelect"
+                        aria-label="Floating label select example">
+                        <option selected>All Categories</option>
+                        <option value="1">Groceries</option>
+                        <option value="2">Drinks</option>
+                        <option value="3">Chocolate</option>
+                    </select>
+
+                </div>
+                <form class="d-flex border-0 " role="search" style="width: 50%;">
+                    <input class="form-control border-0 me-2" type="search"
+                        placeholder="Search for more tha 20000 products" aria-label="Search" />
+                    <button class="btn " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+
+
+
+
+
+
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="#">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">About</a></li>
+                            <li><a class="dropdown-item" href="#">Shop</a></li>
+                            <li><a class="dropdown-item" href="#">SINGLE PRODUCT</a></li>
+                            <li><a class="dropdown-item" href="#">CART</a></li>
+                            <li><a class="dropdown-item" href="#">CHEKOUT</a></li>
+                            <li><a class="dropdown-item" href="#">BLOG</a></li>
+                            <li><a class="dropdown-item" href="#">SINGLE POST</a></li>
+                            <li><a class="dropdown-item" href="#">STYLES</a></li>
+                            <li><a class="dropdown-item" href="#">CONTACT</a></li>
+                            <li><a class="dropdown-item" href="#">THANK YOU</a></li>
+                            <li><a class="dropdown-item" href="#">MY ACCOUNT</a></li>
+                            <li><a class="dropdown-item" href="#">404 ERROR</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li> -->
+                </ul>
+
+            </div>
+
+            <div class="div w-100 d-flex justify-content-end align-item-center" style="align-content:center">
+                <i class="fa-solid fa-user  mt-3"></i>
+                <i class="fa-solid fa-bookmark ms-5 mt-3"></i>
+                <button class="btn ms-4 p-2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+                        class="fa-solid fa-basket-shopping"></i></button>
+
+
+
+
+            </div>
+
+
+
+        </div>
+    </nav>
+
+    <!-- ----------------------------------------------righ\t offcavas----------------- -->
+    <div class="offcanvas offcanvas-end    " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="div d-flex justify-content-between ">
+                <h5 style="color: green;">your cart</h5>
+                <h5 class="border rounded-circle">6</h5>
+            </div>
+            <!-- <p>Try scrolling the rest of the page to see this option in action.</p> -->
+            <table class="w-100">
+                <tbody>
+                    <tr>
+                        <td class="d-flex justify-content-between w-100 border">
+                            <div class="div">
+                                <h6>Growers sider</h6>
+                                <p>brief description</p>
+                            </div>
+                            <div class="div">16$</div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="d-flex justify-content-between w-100 border">
+                            <div class="div">
+                                <h6>Fresh grapes </h6>
+                                <p>brief description</p>
+                            </div>
+                            <div class="div">8$</div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="d-flex justify-content-between w-100 border">
+                            <div class="div">
+                                <h6>Heiz tomato ketchup</h6>
+                                <p>brief description</p>
+                            </div>
+                            <div class="div">5$</div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="d-flex justify-content-between w-100 border">
+                            <div class="div">
+                                <p>Total(USD)</p>
+                            </div>
+                            <div class="div">20$</div>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <div class="div w-100 d-flex justify-content-center bg-success mt-2 p-3 ">
+                <h3>Continue to checkout</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- ------------------------------ -->
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">MENU </h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+     <ul class="menu-list">
+      <li>
+        <i class="fa-solid fa-apple-whole"></i>
+        Fruits and Vegetables
+      </li>
+      <li>
+        <i class="fa-solid fa-egg"></i>
+        Dairy and Eggs
+      </li>
+      <li>
+        <i class="fa-solid fa-drumstick-bite"></i>
+        Meat and Poultry
+      </li>
+      <li>
+       <i class="fa-solid fa-fish"></i>
+        Seafood
+      </li>
+      <li>
+        <i class="fa-solid fa-bread-slice"></i>
+        Bakery and Bread
+      </li>
+      <li>
+       <i class="fa-solid fa-sim-card"></i>
+        Canned Goods
+      </li>
+      <li>
+        <i class="fa-solid fa-snowflake"></i>
+        Frozen Foods
+      </li>
+      <li>
+        <i class="fa-solid fa-bowl-food"></i>
+        Pasta and Rice
+      </li>
+      <li>
+        <i class="fa-solid fa-mug-hot"></i>
+        Breakfast Foods
+      </li>
+      <li>
+        <i class="fa-solid fa-bottle-water"></i>
+        Snacks and Chips
+      </li>
+      <li>
+       <i class="fa-solid fa-wine-bottle"></i>
+        Beverages
+      </li>
+      <li>
+       <i class="fa-solid fa-pepper-hot"></i>
+        Spices and Seasonings
+      </li>
+      <li>
+      <i class="fa-solid fa-baby"></i>
+        Baby Food and Formula
+      </li>
+      <li>
+       <i class="fa-solid fa-house-chimney-medical"></i>
+       Health and Wellness
+      </li>
+      <li>
+       <i class="fa-solid fa-basket-shopping"></i>
+        Household Supplies
+      </li>
+      <li>
+        <i class="fa-solid fa-pump-soap"></i>
+        Personal Care
+      </li>
+      <li>
+       <i class="fa-solid fa-paw"></i>
+       Pet Food and Supplies
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div style="background-image: url('banner-1.jpg');" class="container-fluid pt-5">
+  <div class="row ps-5">
+    <div class="col">
+      <h1 style="font-size: 60px;color: green;">Organic <span style="color: black;">Foods at</span></h1><h1 style="font-size: 60px;">your <span>Doorsteps</span></h1><p style="font-size: 30px;">Dignissim massa diam elementum.</p>
+    </div>
+  </div>
+  <div class="row ps-5 pt-3">
+    <div class="col">
+      <button style="font-size: 25px;" type="button" class="btn btn-success rounded-5">Start Shopping</button>
+      <button style="font-size: 25px;" type="button" class="btn btn-dark rounded-5">Join now</button>
+    </div>
+    
+  </div>
+  <div class="row p-5">
+    <div class="col-lg-2 col-md-12  me-lg-3">
+      <div class="row"><div class="col"><h1>14K+</h1></div>
+      <div class="col"><p>Product Verieties</p></div></div>
+    </div>
+
+    <div class="col-lg-2 col-sm-12  me-lg-3">
+      <div class="row"><div class="col"><h1>50k+</h1></div>
+      <div class="col"><p>Happy Customers</p></div></div>
+    </div>
+
+    <div class="col-lg-2 col-sm-12  me-lg-3">
+      <div class="row"><div class="col"><h1>10+</h1></div>
+      <div class="col"><p>Store Locations</p></div></div>
+    </div>
+    
+
+    </div>
+    <div class="row mx-4" >
+      <div  class="col-lg-4 bg-success text-white ">
+        <div class="row p-3 px-5">
+          <div style="font-size: 50px;" class="col-2 pt-2 me-2 me-5"><i class="fa-solid fa-recycle"></i></div>
+          <div class="col"><h5>Fresh from farm</h5><p>Lorem ipsum dolor sit amet, consectetur adipi elit.</p></div>
+        </div>
+      </div>
+      <div style="color: white;background-color: rgb(62, 76, 62);" class="col-lg-4">
+        <div class="row p-3 px-5">
+          <div style="font-size: 50px;" class="col-2 pt-2 me-2 me-5"><i class="fa-solid fa-leaf"></i></div>
+          <div class="col"><h5>100% Organic</h5><p>Lorem ipsum dolor sit amet, consectetur adipi elit.</p></div>
+        </div>
+      </div>
+      <div style="color: white;background-color: orangered" class="col-lg-4">
+        <div class="row p-3 px-5">
+          <div style="font-size: 50px;" class="col-2 pt-2 me-2 me-5"><i class="fa-solid fa-truck"></i></div>
+          <div class="col"><h5>Fresh from farm</h5><p>Lorem ipsum dolor sit amet, consectetur adipi elit.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="container-fluid pt-5">
+    <div class="row mb-5">
+      <div class="col-xl-9 col-12 ">
+        <h1>category</h1>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-5 col-7  d-flex justify-content-xl-end">
+        <button class="bg-success rounded-3 w-50 text-white border-0">
+          view all
+        </button>
+      </div>
+
+      <div class="col-xl-1 col-md-3 col-5 position-relative">
+        <button class="bg-secondary w-25 rounded-3 me-5 carousel-control-prev" type="button"
+          data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="bg-secondary w-25 rounded-3 me-5 carousel-control-next" type="button"
+          data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon " aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="row-12">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-xl col-lg-2 col-md-3 col-sm-4 col-6  card border-0">
+                <img src="category-thumb-1.jpg " class="card-img-top rounded-circle" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Fruits & veges</p>
+                </div>
+              </div>
+
+              <div class="col-xl col-lg-2 col-md-3 col-sm-4 col-6  card border-0">
+                <img src="category-thumb-2.jpg" class="card-img-top rounded-circle" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Breads & Sweets</p>
+                </div>
+              </div>
+
+              <div class="col-xl col-lg-2 col-md-3 col-sm-4 col-6  card border-0">
+                <img src="category-thumb-3.jpg" class="card-img-top rounded-circle" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Fruits & veges</p>
+                </div>
+              </div>
+
+              <div class="col-xl col-lg-2 col-md-3 col-sm-4 col-6  card border-0">
+                <img src="category-thumb-4.jpg" class="card-img-top rounded-circle" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Beverages</p>
+                </div>
+              </div>
+
+              <div class="col-xl col-lg-2 col-md-3 col-sm-4 col-6  card border-0">
+                <img src="category-thumb-5.jpg" class="card-img-top rounded-circle" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Meat Product</p>
+                </div>
+              </div>
+
+              <div class="col-xl col-lg-2 col-md-3 col-sm-4 col-6  card border-0">
+                <img src="category-thumb-6.jpg" class="card-img-top rounded-circle" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Breads</p>
+                </div>
+              </div>
+
+              <div class="col-xl col-lg-2 col-md-3 col-sm-4 col-6  card border-0">
+                <img src="category-thumb-7.jpg" class="card-img-top rounded-circle" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Fruits & veges</p>
+                </div>
+              </div>
+
+              <div class="col-xl col-lg-2 col-md-3 col-sm-4 col-6  card border-0">
+                <img src="category-thumb-8.jpg" class="card-img-top rounded-circle" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Breads & Sweets</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col card border-0">
+                <img src="category-thumb-8.jpg " class="card-img-top rounded-circle" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Fruits & veges</p>
+                </div>
+              </div>
+
+              <div class="col card border-0">
+                <img src="category-thumb-6.jpg" class="card-img-top rounded-circle" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Breads & Sweets</p>
+                </div>
+              </div>
+
+              <div class="col card border-0">
+                <img src="category-thumb-4.jpg" class="card-img-top rounded-circle" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Fruits & veges</p>
+                </div>
+              </div>
+
+              <div class="col card border-0">
+                <img src="category-thumb-2.jpg" class="card-img-top rounded-circle" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Beverages</p>
+                </div>
+              </div>
+
+              <div class="col card border-0">
+                <img src="category-thumb-7.jpg" class="card-img-top rounded-circle" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Meat Product</p>
+                </div>
+              </div>
+
+              <div class="col card border-0">
+                <img src="category-thumb-5.jpg" class="card-img-top rounded-circle" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Breads</p>
+                </div>
+              </div>
+
+              <div class="col card border-0">
+                <img src="category-thumb-3.jpg" class="card-img-top rounded-circle" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Fruits & veges</p>
+                </div>
+              </div>
+
+              <div class="col card border-0">
+                <img src="category-thumb-1.jpg" class="card-img-top rounded-circle" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Breads & Sweets</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <div class="d-flex justify-content-between mt-5">
+      <div class="ms-1">
+        <h1>Best selling products</h1>
+      </div>
+      <div class="">
+        <button class="bg-success rounded-3 me-5 text-white border-0 p-3">
+          view all
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div
+      class="row row-cols-lg-5 row-cols-xl-6 row-cols-1 row-cols-md-3 row-cols-sm-2   p-3 mt-5 d-flex justify-content-evenly ">
+
+      <div class="col card border-0 box1 m-1">
+        <img src="product-thumb-1.png" class="card-img-top" alt="..." />
+        <div class="card-body d-flex flex-column text-center">
+          <h6 class="card-title">Whole wheat sandwitch bread</h5>
+            <p class="card-text">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star-half-stroke text-warning"></i>
+              (200)
+            </p>
+            <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+            <div class="row  d-none box11">
+              <div class="col-4">
+                <input type="number" class="form-control">
+              </div>
+              <div class="col-6 mt-1">
+                <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+              </div>
+              <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="col card border-0 box1 m-1 ">
+        <img src="product-thumb-2.png" class="card-img-top" alt="..." />
+        <div class="card-body d-flex flex-column text-center">
+          <h5 class="card-title">Whole grain otemeal</h5>
+          <p class="card-text">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star-half-stroke text-warning"></i>
+            (41)
+          </p>
+          <p><s>$54.00</s><b>50.00</b> 10% OFF </p>
+          </p>
+          <div class="row  d-none box11">
+            <div class="col-4">
+              <input type="number" class="form-control">
+            </div>
+            <div class="col-6 mt-1">
+              <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+            </div>
+            <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col card border-0 box1 m-1">
+        <img src="product-thumb-3.png" class="card-img-top" alt="..." />
+        <div class="card-body d-flex flex-column text-center">
+          <h5 class="card-title">sharp sheddar cheese block</h5>
+          <p class="card-text">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star-half-stroke text-warning"></i>
+            (32)
+          </p>
+          <p><s>$41.00</s><b>12.00</b> 10% OFF </p>
+          </p>
+          <div class="row  d-none box11">
+            <div class="col-4">
+              <input type="number" class="form-control">
+            </div>
+            <div class="col-6 mt-1">
+              <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+            </div>
+            <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col card border-0 box1 m-1">
+        <img src="product-thumb-4.png" class="card-img-top" alt="..." />
+        <div class="card-body d-flex flex-column text-center">
+          <h5 class="card-title">Organic Baby Spinach</h5>
+          <p class="card-text">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star-half-stroke text-warning"></i>
+            (222)
+          </p>
+          <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+          </p>
+          <div class="row  d-none box11">
+            <div class="col-4">
+              <input type="number" class="form-control">
+            </div>
+            <div class="col-6 mt-1">
+              <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+            </div>
+            <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col card border-0 box1">
+        <img src="product-thumb-5.png" class="card-img-top" alt="..." />
+        <div class="card-body d-flex flex-column text-center">
+          <h5 class="card-title">Organic Spinach Leaves(Fresh Produce)</h5>
+          <p class="card-text">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star-half-stroke text-warning"></i>
+            (200)
+          </p>
+          <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+          </p>
+          <div class="row d-none box11">
+            <div class="col-4">
+              <input type="number" class="form-control">
+            </div>
+            <div class="col-6 mt-1">
+              <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+            </div>
+            <div class="col-2 mt-1"><i class="fa-regular fa-heart "></i></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div
+      class="row row-cols-lg-5 row-cols-xl-6 row-cols-1 row-cols-md-3 row-cols-sm-2   p-3 mt-5 d-flex justify-content-evenly ">
+
+      <div class="col card border-0 box1 m-1">
+        <img src="product-thumb-6.png" class="card-img-top" alt="..." />
+        <div class="card-body d-flex flex-column text-center">
+          <h6 class="card-title">Fresh Salmon</h5>
+            <p class="card-text">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star-half-stroke text-warning"></i>
+              (222)
+            </p>
+            <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+            <div class="row  d-none box11">
+              <div class="col-4">
+                <input type="number" class="form-control">
+              </div>
+              <div class="col-6 mt-1">
+                <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+              </div>
+              <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="col card border-0 box1 m-1">
+        <img src="product-thumb-7.png" class="card-img-top" alt="..." />
+        <div class="card-body d-flex flex-column text-center">
+          <h5 class="card-title">Imported Italia Spaghetti Pasta</h5>
+          <p class="card-text">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star-half-stroke text-warning"></i>
+            (41)
+          </p>
+          <p><s>$54.00</s><b>50.00</b> 10% OFF </p>
+          </p>
+          <div class="row  d-none box11">
+            <div class="col-4">
+              <input type="number" class="form-control">
+            </div>
+            <div class="col-6 mt-1">
+              <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+            </div>
+            <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col card border-0 box1 m-1">
+        <img src="product-thumb-8.png" class="card-img-top" alt="..." />
+        <div class="card-body d-flex flex-column text-center">
+          <h5 class="card-title">Granny Smith Apples</h5>
+          <p class="card-text">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star-half-stroke text-warning"></i>
+            (32)
+          </p>
+          <p><s>$41.00</s><b>12.00</b> 10% OFF </p>
+          </p>
+          <div class="row  d-none box11">
+            <div class="col-4">
+              <input type="number" class="form-control">
+            </div>
+            <div class="col-6 mt-1">
+              <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+            </div>
+            <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col card border-0 box1 m-1">
+        <img src="product-thumb-9.png" class="card-img-top" alt="..." />
+        <div class="card-body d-flex flex-column text-center">
+          <h5 class="card-title">Organic 2% Reduced Fat Milk</h5>
+          <p class="card-text">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star-half-stroke text-warning"></i>
+            (222)
+          </p>
+          <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+          </p>
+          <div class="row  d-none box11">
+            <div class="col-4">
+              <input type="number" class="form-control">
+            </div>
+            <div class="col-6 mt-1">
+              <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+            </div>
+            <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col card border-0 box1">
+        <img src="product-thumb-10.png" class="card-img-top" alt="..." />
+        <div class="card-body d-flex flex-column text-center">
+          <h5 class="card-title">Greek Style Plane Yougurt</h5>
+          <p class="card-text">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star-half-stroke text-warning"></i>
+            (200)
+          </p>
+          <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+          </p>
+          <div class="row d-none box11">
+            <div class="col-4">
+              <input type="number" class="form-control">
+            </div>
+            <div class="col-6 mt-1">
+              <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+            </div>
+            <div class="col-2 mt-1"><i class="fa-regular fa-heart "></i></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+  <div class="contaner-fluid">
+    <div class="row mb-5">
+      <div class="col-xl-9 col-12 ">
+        <h1>category</h1>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-5 col-7  d-flex justify-content-xl-end">
+        <button class="bg-success rounded-3 w-50 text-white border-0">
+          view all
+        </button>
+      </div>
+      <div class="col-xl-1 col-md-3 col-5 position-relative">
+        <button class="bg-secondary w-25 rounded-3 me-5 carousel-control-prev" type="button"
+          data-bs-target="#carouselExample1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="bg-secondary w-25 rounded-3 me-5 carousel-control-next" type="button"
+          data-bs-target="#carouselExample1" data-bs-slide="next">
+          <span class="carousel-control-next-icon " aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="row-12">
+      <div id="carouselExample1" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              class="row row-cols-lg-5 row-cols-xl-6 row-cols-1 row-cols-md-3 row-cols-sm-2   p-3 mt-5 d-flex justify-content-evenly ">
+
+              <div class="col card border-0 box1 m-1">
+                <img src="product-thumb-10.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h6 class="card-title">Whole wheat sandwitch bread</h5>
+                    <p class="card-text">
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                      (200)
+                    </p>
+                    <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+                    <div class="row  d-none box11">
+                      <div class="col-4">
+                        <input type="number" class="form-control">
+                      </div>
+                      <div class="col-6 mt-1">
+                        <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                      </div>
+                      <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                    </div>
+                </div>
+              </div>
+
+
+              <div class="col card border-0 box1 m-1 ">
+                <img src="product-thumb-11.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">Whole grain otemeal</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (41)
+                  </p>
+                  <p><s>$54.00</s><b>50.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row  d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col card border-0 box1 m-1">
+                <img src="product-thumb-12.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">sharp sheddar cheese block</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (32)
+                  </p>
+                  <p><s>$41.00</s><b>12.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row  d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col card border-0 box1 m-1">
+                <img src="product-thumb-14.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">Organic Baby Spinach</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (222)
+                  </p>
+                  <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row  d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col card border-0 box1">
+                <img src="product-thumb-15.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">Organic Spinach Leaves(Fresh Produce)</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (200)
+                  </p>
+                  <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart "></i></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="row row-cols-lg-5 row-cols-xl-6 row-cols-1 row-cols-md-3 row-cols-sm-2   p-3 mt-5 d-flex justify-content-evenly ">
+
+              <div class="col card border-0 box1 m-1">
+                <img src="product-thumb-1.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h6 class="card-title">Whole wheat sandwitch bread</h5>
+                    <p class="card-text">
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                      (200)
+                    </p>
+                    <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+                    <div class="row  d-none box11">
+                      <div class="col-4">
+                        <input type="number" class="form-control">
+                      </div>
+                      <div class="col-6 mt-1">
+                        <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                      </div>
+                      <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col card border-0 box1 m-1 ">
+                <img src="product-thumb-2.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">Whole grain otemeal</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (41)
+                  </p>
+                  <p><s>$54.00</s><b>50.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row  d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col card border-0 box1 m-1">
+                <img src="product-thumb-3.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">sharp sheddar cheese block</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (32)
+                  </p>
+                  <p><s>$41.00</s><b>12.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row  d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col card border-0 box1 m-1">
+                <img src="product-thumb-4.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">Organic Baby Spinach</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (222)
+                  </p>
+                  <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row  d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col card border-0 box1">
+                <img src="product-thumb-5.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">Organic Spinach Leaves(Fresh Produce)</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (200)
+                  </p>
+                  <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart "></i></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="row m-5 page7image bg-success">
+    <div class="col-6  ">
+      <h1 class="text-white pt-5 ps-5 ps-5 ms-5 ">Get 25% Discount</h1>
+      <h1 class="text-white ps-5 ms-5">on your first</h1>
+      <h1 class="text-white ps-5 ms-5">purchase</h1>
+      <p class="text-white ps-5 ms-5 pb-5">Just Sign Up & Register it now to become member.</p>
+    </div>
+    <div class="col-6 d-flex  flex-column justify-content-center">
+      <div class="mb-3 mx-5">
+        <label for="formGroupExampleInput" class="form-label "></label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+      </div>
+      <div class="mb-3 mx-5">
+        <label for="formGroupExampleInput2" class="form-label "></label>
+        <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Mail">
+      </div>
+      <div class="row  mx-5">
+        <div class="col-12 ">
+          <button class="w-100 bg-secondary text-white mt-3 " type="submit">Submit</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- =================================page 8========================================= -->
+  <div class="contaner-fluid">
+    <div class="row mb-5">
+      <div class="col-xl-9 col-12 ">
+        <h1>Most Popular Products</h1>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-5 col-7  d-flex justify-content-xl-end">
+        <button class="bg-success rounded-3 w-50 text-white border-0">
+          view all
+        </button>
+      </div>
+      <div class="col-xl-1 col-md-3 col-5 position-relative">
+        <button class="bg-secondary w-25 rounded-3 me-5 carousel-control-prev" type="button"
+          data-bs-target="#carouselExample2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="bg-secondary w-25 rounded-3 me-5 carousel-control-next" type="button"
+          data-bs-target="#carouselExample2" data-bs-slide="next">
+          <span class="carousel-control-next-icon " aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="row-12">
+      <div id="carouselExample2" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              class="row row-cols-lg-5 row-cols-xl-6 row-cols-1 row-cols-md-3 row-cols-sm-2   p-3 mt-5 d-flex justify-content-evenly ">
+
+              <div class="col card border-0 box1 m-1">
+                <img src="product-thumb-2.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h6 class="card-title">Whole wheat sandwitch bread</h5>
+                    <p class="card-text">
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                      (200)
+                    </p>
+                    <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+                    <div class="row  d-none box11">
+                      <div class="col-4">
+                        <input type="number" class="form-control">
+                      </div>
+                      <div class="col-6 mt-1">
+                        <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                      </div>
+                      <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col card border-0 box1 m-1 ">
+                <img src="product-thumb-3.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">Whole grain otemeal</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (41)
+                  </p>
+                  <p><s>$54.00</s><b>50.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row  d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col card border-0 box1 m-1">
+                <img src="product-thumb-4.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">sharp sheddar cheese block</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (32)
+                  </p>
+                  <p><s>$41.00</s><b>12.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row  d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col card border-0 box1 m-1">
+                <img src="product-thumb-5.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">Organic Baby Spinach</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (222)
+                  </p>
+                  <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row  d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col card border-0 box1">
+                <img src="product-thumb-6.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">Organic Spinach Leaves(Fresh Produce)</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (200)
+                  </p>
+                  <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart "></i></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="row row-cols-lg-5 row-cols-xl-6 row-cols-1 row-cols-md-3 row-cols-sm-2   p-3 mt-5 d-flex justify-content-evenly ">
+
+              <div class="col card border-0 box1 m-1">
+                <img src="product-thumb-7.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h6 class="card-title">Whole wheat sandwitch bread</h5>
+                    <p class="card-text">
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                      (200)
+                    </p>
+                    <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+                    <div class="row  d-none box11">
+                      <div class="col-4">
+                        <input type="number" class="form-control">
+                      </div>
+                      <div class="col-6 mt-1">
+                        <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                      </div>
+                      <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col card border-0 box1 m-1 ">
+                <img src="product-thumb-8.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">Whole grain otemeal</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (41)
+                  </p>
+                  <p><s>$54.00</s><b>50.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row  d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col card border-0 box1 m-1">
+                <img src="product-thumb-9.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">sharp sheddar cheese block</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (32)
+                  </p>
+                  <p><s>$41.00</s><b>12.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row  d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col card border-0 box1 m-1">
+                <img src="product-thumb-10.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">Organic Baby Spinach</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (222)
+                  </p>
+                  <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row  d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col card border-0 box1">
+                <img src="product-thumb-11.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">Organic Spinach Leaves(Fresh Produce)</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (200)
+                  </p>
+                  <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart "></i></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- ================================page-9=============================================== -->
+  <div class="contaner-fluid ">
+    <div class="row mb-5">
+      <div class="col-xl-9 col-12 px-5">
+        <h1>Just Arrived</h1>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-5 col-7  d-flex justify-content-xl-end">
+        <button class="bg-success rounded-3 w-50 text-white border-0">
+          view all
+        </button>
+      </div>
+      <div class="col-xl-1 col-md-3 col-5 position-relative">
+        <button class="bg-secondary w-25 rounded-3 me-5 carousel-control-prev" type="button"
+          data-bs-target="#carouselExample3" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="bg-secondary w-25 rounded-3 me-5 carousel-control-next" type="button"
+          data-bs-target="#carouselExample3" data-bs-slide="next">
+          <span class="carousel-control-next-icon " aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="row-12">
+      <div id="carouselExample3" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              class="row row-cols-lg-5 row-cols-xl-6 row-cols-1 row-cols-md-3 row-cols-sm-2   p-3 mt-5 d-flex justify-content-evenly ">
+
+              <div class="col card border-0 box1 m-1">
+                <img src="product-thumb-20.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h6 class="card-title">Whole wheat sandwitch bread</h5>
+                    <p class="card-text">
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                      (200)
+                    </p>
+                    <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+                    <div class="row  d-none box11">
+                      <div class="col-4">
+                        <input type="number" class="form-control">
+                      </div>
+                      <div class="col-6 mt-1">
+                        <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                      </div>
+                      <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col card border-0 box1 m-1 ">
+                <img src="product-thumb-21.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">Whole grain otemeal</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (41)
+                  </p>
+                  <p><s>$54.00</s><b>50.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row  d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col card border-0 box1 m-1">
+                <img src="product-thumb-22.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">sharp sheddar cheese block</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (32)
+                  </p>
+                  <p><s>$41.00</s><b>12.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row  d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col card border-0 box1 m-1">
+                <img src="product-thumb-24.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">Organic Baby Spinach</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (222)
+                  </p>
+                  <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row  d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col card border-0 box1">
+                <img src="product-thumb-25.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">Organic Spinach Leaves(Fresh Produce)</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (200)
+                  </p>
+                  <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart "></i></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="row row-cols-lg-5 row-cols-xl-6 row-cols-1 row-cols-md-3 row-cols-sm-2   p-3 mt-5 d-flex justify-content-evenly ">
+
+              <div class="col card border-0 box1 m-1">
+                <img src="product-thumb-26.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h6 class="card-title">Whole wheat sandwitch bread</h5>
+                    <p class="card-text">
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                      (200)
+                    </p>
+                    <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+                    <div class="row  d-none box11">
+                      <div class="col-4">
+                        <input type="number" class="form-control">
+                      </div>
+                      <div class="col-6 mt-1">
+                        <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                      </div>
+                      <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col card border-0 box1 m-1 ">
+                <img src="product-thumb-27.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">Whole grain otemeal</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (41)
+                  </p>
+                  <p><s>$54.00</s><b>50.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row  d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col card border-0 box1 m-1">
+                <img src="product-thumb-28.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">sharp sheddar cheese block</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (32)
+                  </p>
+                  <p><s>$41.00</s><b>12.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row  d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col card border-0 box1 m-1">
+                <img src="product-thumb-29.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">Organic Baby Spinach</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (222)
+                  </p>
+                  <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row  d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart"></i></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col card border-0 box1">
+                <img src="product-thumb-23.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title">Organic Spinach Leaves(Fresh Produce)</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    (200)
+                  </p>
+                  <p><s>$24.00</s><b>18.00</b> 10% OFF </p>
+                  </p>
+                  <div class="row d-none box11">
+                    <div class="col-4">
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-6 mt-1">
+                      <p><i class="fa-solid fa-cart-shopping"></i> Add to Cart</p>
+                    </div>
+                    <div class="col-2 mt-1"><i class="fa-regular fa-heart "></i></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- ================================page10============================= -->
+  <div class="container-fluid">
+    <div class="d-flex justify-content-between mt-5">
+      <div class="ms-1">
+        <h1>Our Recent Blog</h1>
+      </div>
+      <div class="">
+        <button class="bg-success rounded-3 me-5 text-white border-0 p-3">
+          view all
+        </button>
+      </div>
+    </div>
+    <div class="row d-flex gap-5 justify-content-center mt-5">
+      <div class="card col-lg-3 col-md-6 col-sm-10">
+        <img src="post-thumbnail-1.jpg" class="card-img-top pt-3" alt="...">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-5"><i class="fa-solid fa-calendar"></i> <span style="font-size: .8rem;">22-Aug-2022</span>
+            </div>
+
+            <div class="col"><i class="fa-solid fa-folder"></i><span style="font-size: .8rem;">Tips&tricks</span></div>
+
+          </div>
+          <h3 style="font-weight: 600;" class="card-title">Top 10 casual look ideas to dress up your kids</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim
+              tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+
+        </div>
+      </div>
+      <div class="card col-lg-3 col-md-6 col-sm-10">
+        <img src="post-thumbnail-2.jpg" class="card-img-top pt-3" alt="...">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-5"><i class="fa-solid fa-calendar"></i> <span style="font-size: .8rem;">22-Aug-2022</span>
+            </div>
+
+            <div class="col"><i class="fa-solid fa-folder"></i><span style="font-size: .8rem;">Trending</span></div>
+
+          </div>
+          <h3 style="font-weight: 600;" class="card-title">Latest trends of wearing street wears supremely</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim
+              tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+
+        </div>
+      </div>
+
+      <div class="card col-lg-3 col-md-6 col-sm-10 ">
+        <img src="post-thumbnail-3.jpg" class="card-img-top pt-3" alt="...">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-5"><i class="fa-solid fa-calendar"></i> <span style="font-size: .8rem;">22-Aug-2022</span>
+            </div>
+
+            <div class="col"><i class="fa-solid fa-folder"></i><span style="font-size: .8rem;">inspiration</span></div>
+
+          </div>
+          <h3 style="font-weight: 600;" class="card-title">10 Different Types of comfortable clothes ideas for women
+            </h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim
+              tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="container-fluid p-lg-5">
+    <div class="row rounded-5 bg-warning m-5  ">
+      <div class="col ps-lg-5 ">
+        <div class="row mt-5 pt-5 ps-lg-5 ms-lg-5 ">
+          <div class="col-12">
+            <h1>Download Organic <br> App</h1>
+          </div>
+          <div class="col-12">
+            <p>Online Orders made easy, fast and reliable</p>
+          </div>
+          <img class="col" src="img-app-store.png" alt="">
+          <img class="col" src="img-google-play.png" alt="">
+        </div>
+      </div>
+     
+        <img class="col" src="banner-onlineapp.png" alt="">
+     
+
+
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row mx-5">
+      <h1 style="font-weight: 700;">People are also looking for</h1>
+    </div>
+    
+      
+      
+        <button style="background-color: rgb(251, 220, 194);" type="button " class="btn mb-3">Warrior Blend Organic</button>
+        <button style="background-color: rgb(251, 220, 194);" type="button" class="btn mb-3 ">Chao Cheese Creamy
+          Corn</button>
+        <button style="background-color: rgb(251, 220, 194);" type="button" class="btn mb-3 ">Salty Kettle Corn</button>
+        <button style="background-color: rgb(251, 220, 194);" type="button" class="btn mb-3 ">Chobani Greek Yogurt</button>
+        <button style="background-color: rgb(251, 220, 194);" type="button" class="btn mb-3 ">Sweet vanilla Yogurt</button>
+        <button style="background-color: rgb(251, 220, 194);" type="button" class="btn mb-3 ">Foster Farm Takeout Crispy
+          wings</button>
+      
+
+      
+        <button style="background-color: rgb(251, 220, 194);" type="button " class="btn mb-3">Blue diamond almonds</button>
+        <button style="background-color: rgb(251, 220, 194);" type="button" class="btn mb-3 ">Angie's Boomchickapop Corn</button>
+        <button style="background-color: rgb(251, 220, 194);" type="button" class="btn mb-3 ">Salty Kettle Corn</button>
+        <button style="background-color: rgb(251, 220, 194);" type="button" class="btn mb-3 ">Chobani Greek Yogurt</button>
+        <button style="background-color: rgb(251, 220, 194);" type="button" class="btn mb-3 ">Chicken meatballs</button>
+        <button style="background-color: rgb(251, 220, 194);" type="button" class="btn mb-3 ">Angie's Boomchickapop Corn</button>
+        <button style="background-color: rgb(251, 220, 194);" type="button" class="btn mb-3 ">Salty kettle Corn</button>
+        <button style="background-color: rgb(251, 220, 194);" type="button" class="btn mb-3 ">Chobani Greek Yogurt</button>
+       
+
+          
+
+
+
+      
+        <button style="background-color: rgb(251, 220, 194);" type="button " class="btn mb-3">Sweet Vanilla Yogurt</button>
+        <button style="background-color: rgb(251, 220, 194);" type="button" class="btn mb-3 ">Foster Farms Takeout Crispy wings</button>
+        <button style="background-color: rgb(251, 220, 194);" type="button" class="btn mb-3 ">Warrior Blend Organic</button>
+        <button style="background-color: rgb(251, 220, 194);" type="button" class="btn mb-3 ">Chao Cheese CreamyY</button>
+        <button style="background-color: rgb(251, 220, 194);" type="button" class="btn mb-3 ">Chicken meatballs</button>
+      
+
+
+
+
+    
+  </div>
+  <div class="container-fluid ">
+    <div class="row d-flex justify-content-evenly m-5">
+
+      <div class="col border border-2 border-dark  rounded-2 mx-3 ">
+        <div class="row">
+          <div class="col "> <i class="fa-solid fa-truck"></i></div>
+          </div>
+        <div class="col"><h1>Free delivery</h1><p>Lorem ipsum dolor sit amet, consectetur adipi elit.</p></div>
+      </div>
+      <div class="col border border-2 border-dark  rounded-2 mx-3">
+        <div class="row">
+          <div class="col "> <i class="fa-solid fa-truck"></i></div>
+          </div>
+        <div class="col"><h1>100% secure payment</h1><p>Lorem ipsum dolor sit amet, consectetur adipi elit.</p></div>
+      </div>
+      <div class="col border border-2 border-dark  rounded-2 mx-3">
+        <div class="row">
+          <div class="col "> <i class="fa-solid fa-truck"></i></div>
+          </div>
+        <div class="col"><h1>Quality guarantee</h1><p>Lorem ipsum dolor sit amet, consectetur adipi elit.</p></div>
+      </div>
+      <div class="col border border-2 border-dark  rounded-2 mx-3">
+        <div class="row">
+          <div class="col "> <i class="fa-solid fa-truck"></i></div>
+          </div>
+        <div class="col"><h1>guaranteed savings</h1><p>Lorem ipsum dolor sit amet, consectetur adipi elit.</p></div>
+      </div>
+      <div class="col border border-2 border-dark  rounded-2 mx-3">
+        <div class="row">
+          <div class="col "> <i class="fa-solid fa-truck"></i></div>
+          </div>
+        <div class="col"><h1>Daily offers</h1><p>Lorem ipsum dolor sit amet, consectetur adipi elit.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid p-5">
+    <div class="row">
+      <div class="col">
+        <div class="row   ">
+          <div class="col-12 "><img src="logo.svg" alt="" height="60px"></div>
+          <div class="col">
+            <i class="ps-lg-4 fa-brands fa-facebook"></i>
+            <i class="ps-lg-4 fa-brands fa-twitter"></i>
+            <i class="ps-lg-4 fa-brands fa-youtube"></i>
+            <i class="ps-lg-4 fa-brands fa-instagram"></i>
+            <i class="ps-lg-4 fa-brands fa-amazon"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row  ">
+          <div class="col-12"><h1>organic</h1></div>
+          <div class="col  ">
+            <p><a class="text-secondary" style="text-decoration: none;"  href="">About us</a></p>
+            <p><a class="text-secondary" style="text-decoration: none;" href="">Conditions</a></p>
+            <p><a class="text-secondary" style="text-decoration: none;" href="">Our Journals</a></p>
+            <p><a class="text-secondary" style="text-decoration: none;" href="">Careers</a></p>
+            <p><a class="text-secondary" style="text-decoration: none;" href="">Affiliate Programme</a></p>
+            <p><a class="text-secondary" style="text-decoration: none;" href="">Ultras Press</a></div></p>
+        </div>
+      </div>
+      <div class="col">
+         <div class="row">
+          <div class="col-12"><h1>Quick Links</h1></div>
+          <div class="col ">
+            <p><a class="text-secondary" style="text-decoration: none;"  href="">Offers</a></p>
+            <p><a class="text-secondary" style="text-decoration: none;" href="">Discount coupens</a></p>
+            <p><a class="text-secondary" style="text-decoration: none;" href="">Syores</a></p>
+            <p><a class="text-secondary" style="text-decoration: none;" href="">Track Order</a></p>
+            <p><a class="text-secondary" style="text-decoration: none;" href="">Shop</a></p>
+            <p><a class="text-secondary" style="text-decoration: none;" href="">Info</a></div></p>
+        </div>
+      </div>
+      <div class="col">
+         <div class="row">
+          <div class="col-12"><h1>Customer Service</h1></div>
+          <div class="col ">
+            <p><a class="text-secondary" style="text-decoration: none;"  href="">FAQ</a></p>
+            <p><a class="text-secondary" style="text-decoration: none;" href="">Contact</a></p>
+            <p><a class="text-secondary" style="text-decoration: none;" href="">Privacy Policy</a></p>
+            <p><a class="text-secondary" style="text-decoration: none;" href="">Returns & Refunds</a></p>
+            <p><a class="text-secondary" style="text-decoration: none;" href="">Cookie Guidelines</a></p>
+            <p><a class="text-secondary" style="text-decoration: none;" href="">Delivery Information</a></div></p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="col-12"><h1>Subscribe us</h1></div>
+          <div class="col ">
+            <p>Subscribe to our newsletter to get updates about our grand offers.</p>
+           
+        </div>
+      </div>
+      <div class="input-group">
+        <input class="form-control"  type="email"placeholder="Email">
+        <button style="background-color: rgb(251, 220, 194);" type="button " class="btn input-group-text">Subscribe</button>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
